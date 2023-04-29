@@ -1,3 +1,4 @@
+KSU Spring 2023 - Mobile Software Development - Group Project
 Problem Statement
 
 • Most people do not keep records of their car.
@@ -26,3 +27,8 @@ Additional Information
 
 • https://vpic.nhtsa.dot.gov/api/ to pull Vehicle VIN to add car into MyGarage app.
 • We used a Firebase database that will store user information and their respective virtual garages.
+
+Team Members
+• Aditya Shiroya
+• Michael Cooper
+• Nicolas Ortiz
