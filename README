@@ -1,0 +1,28 @@
+Problem Statement
+
+• Most people do not keep records of their car.
+• This causes auto-shops to take advantage of the car owners because they do not have any records of past maintenance.
+• Our app will be easy-to-use and readily available for any car owner to keep track of the maintenance and mileage on their cars.
+• This will allow car owners to be more aware of what their car needs when getting maintenance done.
+
+App Features
+
+• Personal and Business travel expense tracker
+• Personal and Business vehicle maintenance report
+• Vehicle pictures, VIN, license plate, etc.
+• Vehicle accident reports
+
+Functionality Overview
+
+• The user starts by signing into their account or creating a new one.
+• If they have previously saved cars in their virtual garage, they will show up in the next screen.
+• They can then click on one of their cars and see all information.
+• They can then select any of the fields and enter their maintenance information.
+• The user can also switch their preference between kilometers and miles for fuel usage.
+• There is an option for dark mode as well.
+• The user can add new cars to their virtual garage at any time, and it will be added to the database so everything will be saved.
+
+Additional Information
+
+• https://vpic.nhtsa.dot.gov/api/ to pull Vehicle VIN to add car into MyGarage app.
+• We used a Firebase database that will store user information and their respective virtual garages.
