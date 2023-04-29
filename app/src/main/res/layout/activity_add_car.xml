@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal"
+                    android:text="Enter New Car"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@+id/edVinSearch"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_blue_color_outlined"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="4Y1SL65848Z411439"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:text="ZPBUA1ZL9KLA00848"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color_light" />
+
+
+                <Button
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginVertical="8dp"
+                    android:backgroundTint="@color/blue_color"
+                    android:text="Search Car (VIN #)"
+                    android:textAllCaps="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="54dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:weightSum="3">
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1.4"
+                        android:background="#ccc" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".3"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:text="or"
+                        android:textColor="@color/text_color_light" />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1.4"
+                        android:background="#ccc" />
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@color/blue_color"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+
+                                <ImageView
+                                    android:id="@+id/image"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@android:drawable/ic_input_add" />
+
+                            </RelativeLayout>
+
+                            <EditText
+                                android:id="@+id/edMake"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Make"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edModel"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Model"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edYear"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Year"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edColor"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Color"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edInsurance"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Insurance Provider"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edSupportNumber"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Support Number"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edVinNumber"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Vin #"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edDriver"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Driver(s) "
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                            <EditText
+                                android:id="@+id/edMiles"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_blue_color_outlined"
+                                android:elevation="5dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Miles Driven "
+                                android:paddingStart="10dp"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_color_light" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/buttonAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="12dp"
+                            android:backgroundTint="@color/blue_color"
+                            android:text="Add Vehicle"
+                            android:textAllCaps="false" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/linear"
+        android:background="#ccc" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Privacy"
+            android:textColor="@color/text_color_light" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Terms"
+            android:textColor="@color/text_color_light" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/primary_color"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+</RelativeLayout>
